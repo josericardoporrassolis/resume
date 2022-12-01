@@ -85,7 +85,10 @@ var file = (function($) {
     };
 }(jQuery));
 
-$('li').cycle(2000, 'active');
+$('li.listNova').cycle(2000, 'active');
+$('li.listScotia').cycle(2000, 'active');
+$('li.listCV').cycle(2000, 'active');
+$('li.listSysco').cycle(2000, 'active');
 
 $(document).ready(function() {
   file.init();
