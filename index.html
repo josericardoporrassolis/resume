@@ -1,447 +1,181 @@
 <html lang="es">
    <head>
       <meta charset="UTF-8">
-      <title>Eng. José Ricardo Porras Solís</title>
+      <title>José Ricardo Porras Solís</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://avatars.githubusercontent.com/u/104660392?s=400&u=5c659e2cfaecead1c4b9bbc43453f1e5ad70ee59&v=4" rel="shortcut icon" type="image/x-icon">
 	  <link rel="stylesheet" href="css/styles.min.css">
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script src="js/file.js" />
 	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    </head>
    <body>
-      <i class="icon-menu burger-button" id="burger-menu"></i>
-      <header class="header">
-         <div class="container">
-            <div class="custom">
-               <figure class="logo">
-                  <img src="images/favicon.png" height="50" alt="Logo">
-               </figure>
-            </div>
-            <nav class="menu" id="menu">
-               <ol>
-                  <li>
-                     <a class="link" href="#experience" id="btnExperience">Experience</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#anotherSkills" id="btnAnotherSkills">Another skills</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#education" id="btnEducation">Education</a>
-                  </li>
-                  <li>
-                     <a class="link" href="#contacto" id="btnWorkTogether">Work together</a>
-                  </li>
-               </ol>
-            </nav>
-         </div>
-      </header>
-      <section class="hero">
-         <div class="container">
-            <div class="firstDivHeroContainer">
-               <div class="secondDivHeroContainer">
-                  <h1 class="titleName">
-                     <strong>José Ricardo Porras Solís</strong> 
-                  </h1>
-                  <h2 class="professionalSummary">
-                     Software engineer, with experience in frontend web development, backend development, documentation and collection of business requirements and their translation into functional software requirements. <br>
-                  </h2>
-               </div>
-               <img class="hero-image" src="images/code.png" alt="imagen code">
-            </div>
-         </div>
-      </section>
-      <section id="experience" class="portfolio">
-         <div class="container">
-            <h2>Experience</h2>
-            <article class="project">
-               <div class="project-details">
-                  <h3 class="project-title">Microservices to cards, accounts and customers</h3>
-                  <h6 class="project-course">Scotiabank</h6>
-                  <p class="project-date"><small><strong>Date:</strong> May 2021 - at present</small></p>
-                  <p class="project-description"></p>
-                  <p class="project-description">Some technologies used are the following:
-                  </p>
-                  <p class="project-description"></p>
-                  <strong>Java 1.8, spring, microservices (Chasis), soap, rest, junit(Integration testing), ISO20022, azure</strong>
-                  <br>
-                  <br>
-                  <p class="project-date"><small><strong>Some tasks:</strong>
-                     <br>
-                     - Technical leader (card tokenization, transfers real time)
-                     <br>
-                     - Analyze and develop functional requirements described in user stories provided by the internal customer.
-                     <br>
-                     - Performance
-                     <br>
-                     - Propose, design and implement software solutions to problems and needs of the user part according to business logic.
-                     <br>
-                     - Offer advice on the use of technology to achieve objectives.
-                     </small>
-                  </p>
-				  <br>
-				  <div id="accordion">
-					<div>
-						<a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							<h5 class="project-description"><strong>Projects</strong> <i class="fas fa-angle-down"></i></h5>
-						</a>
 
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-							<div class="card-body">
-								<ul id="myList" class="list-group">
-									<li class="listScotia list-group-item active">Tokenization <i class="fas fa-arrow-right"></i> Services to tokenize debit or credit cards for Costa Rica and Panama</li>
-									<li class="listScotia list-group-item">MPH <i class="fas fa-arrow-right"></i> Services to pay public and private services in Panamá</li>
-									<li class="listScotia list-group-item">ACH Express <i class="fas fa-arrow-right"></i> Services to make transfers in real time in Panamá</li>									
-								</ul>
-							</div>
-						</div>
-					</div>
-				  </div>
-               </div>
-               <figure class="project-imageContainer">
-                  <center>
-                     <div class="bd-example">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <img class="project-image" width="150" src="images/java.png">
-								 <img class="project-image" width="150" data-src="images/gradlephant.jpg"></br>
-								 <img class="project-image" width="150" data-src="images/openssl.webp">
-								 <img class="project-image" width="150" data-src="images/oracle.png">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="project-image" width="150" data-src="images/spring.jpg">
-								 <img class="project-image" width="150" data-src="images/sql.png"></br>
-								 <img class="project-image" width="150" data-src="images/bitbucket.png">
-								 <img class="project-image" width="150" data-src="images/iso.webp">
-                              </div>                                                     
-                           </div>
-                        </div>
-                     </div>
-                  </center>
-               </figure>
-            </article>
-			
-			<article class="project">
-               <div class="project-details">
-                  <h3 class="project-title">Front end, back end</h3>
-                  <h6 class="project-course">NovaComp</h6>
-                  <p class="project-date"><small><strong>Date:</strong> August 2018 - May 2021</small></p>
-                  <p class="project-description"></p>
-                  <p class="project-description">Some technologies used are the following:
-                  </p>
-                  <p class="project-description"></p>
-                  <strong>Oracle, Java 1.8, spring, Enterprise JavaBeans(EJBs), JSF(PrimeFaces), WebLogic, WAS</strong>
-                  <br>
-                  <br>				  
-                  <p class="project-date"><small><strong>Some tasks:</strong>				 
-                     <br>
-                     - Technical leader (SISO)
-                     <br>
-                     - Analyze and develop functional requirements described in user stories provided by the external customer.
-                     <br>
-                     - Implement solutions to functional software requirements given by the customer.
-                     <br>
-                     - Propose, design and implement software solutions to problems and needs of the user part according to business logic.
-                     </small>
-                  </p>
-				  <br>
-				  <div id="accordion">
-					<div>
-						<a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-							<h5 class="project-description"><strong>Projects</strong> <i class="fas fa-angle-down"></i></h5>
-						</a>
+	<div class="desktop-buttons">
+	  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')"><span data-en="🌓 Dark" data-es="🌓 Oscuro">🌓 Dark</span></button>
+	  <button class="toggle-lang" onclick="toggleLanguage()">🌐 Español</button>
+	  <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Print</span></button>
+	</div>
 
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-							<div class="card-body">
-								<ul id="myList" class="list-group">
-									<li class="listNova list-group-item active">SGCC <i class="fas fa-arrow-right"></i> Sistema Gestión de Cartera de Clientes</li>
-									<li class="listNova list-group-item">SACCE <i class="fas fa-arrow-right"></i> Sistema Asignación y control de Trabajo de Canales Electrónicos</li>
-									<li class="listNova list-group-item">PORTAL <i class="fas fa-arrow-right"></i> Sistema inmobiliario encargado de flujos y cálculos de costos por proyecto</li>
-									<li class="listNova list-group-item">MSP <i class="fas fa-arrow-right"></i> System to manage the parameters within the MSP app</li>
-									<li class="listNova list-group-item">ICS <i class="fas fa-arrow-right"></i> Services for Costa Rica and Panama: card payments, payment of services, transfers, reports, movements of the day, cash advances, blocks, TSYS and direct communication with AS400 through DB2 and MQ</li>
-									<li class="listNova list-group-item">Journey <i class="fas fa-arrow-right"></i> ICS Services for the Caribbean</li>
-									<li class="listNova list-group-item">SISO <i class="fas fa-arrow-right"></i> System in charge of managing and reporting disabilities</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				  </div>
-               </div>
-               <figure class="project-imageContainer">
-                  <center>
-                     <div class="bd-example">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <img class="project-image" width="150" src="images/java.png">
-								 <img class="project-image" width="150" data-src="images/maven.png"></br>
-								 <img class="project-image" width="150" data-src="images/prime.webp">
-								 <img class="project-image" width="150" data-src="images/weblogic.webp">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="project-image" width="150" data-src="images/jax-rs.png">
-								 <img class="project-image" width="150" data-src="images/ejb.png"></br>
-								 <img class="project-image" width="300" data-src="images/plsql.png">
-                              </div>                                                     
-                           </div>
-                        </div>
-                     </div>
-                  </center>
-               </figure>			
-            </article>
-			
-			<article class="project">
-               <div class="project-details">
-                  <h3 class="project-title">Programmer analyst</h3>
-                  <h6 class="project-course">Cable Visión</h6>
-                  <p class="project-date"><small><strong>Date:</strong> Octuber 2015 - August 2018</small></p>
-                  <p class="project-description"></p>
-                  <p class="project-description">Some technologies used are the following:
-                  </p>
-                  <p class="project-description"></p>
-                  <strong>Java 1.7 and 1.8, enterprise javaBeans(EJBs), JSF(PrimeFaces), Glassfish, Tomcat, SQL server</strong>
-                  <br>
-                  <br>				  
-                  <p class="project-date"><small><strong>Some tasks:</strong>				 
-                     <br>
-                     - Technical leader (FastTrack)
-                     <br>
-                     - Propose solution architecture.
-                     <br>
-                     - Estimate duration of task development.
-                     <br>
-                     - Maintain data persistence in a integrated and secure way.
-                     </small>
-                  </p>
-				  <br>
-				  <div id="accordion">
-					<div>
-						<a data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-							<h5 class="project-description"><strong>Projects</strong> <i class="fas fa-angle-down"></i></h5>
-						</a>
+	<nav class="navbar">
+	  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+	  <div class="navbar-links" id="navbarLinks">
+		<a href="#summary"><span data-en="Summary" data-es="Resumen">Summary</span></a>
+		<a href="#experience"><span data-en="Experience" data-es="Experiencia">Experience</span></a>
+		<a href="#education"><span data-en="Education" data-es="Educacion">Education</span></a>
+		<a href="#certifications"><span data-en="Certifications" data-es="Certificaciones">Certifications</span></a>
+		<a href="#technical-skills"><span data-en="Technical Skills" data-es="Habilidades tecnicas">Technical Skills</span></a>
+		<a href="#soft-skills"><span data-en="Soft Skills" data-es="Habilidades blandas">Soft Skills</span></a>
+		<a href="#contact"><span data-en="Contact" data-es="Contacto">Contact</span></a>
+		<div class="mobile-buttons">
+		  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')"><span data-en="🌓 Dark" data-es="🌓 Oscuro">🌓 Dark</span></button>
+		  <button class="toggle-lang" onclick="toggleLanguage()">🌐 Español</button>
+		  <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Print</span></button>
+		</div>
+	  </div>
+	</nav>
+	
+	<!-- Logo Carousel -->
+	<div class="carousel-container">
+	  <div class="carousel-track">
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="Bitbucket" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="SonarQube" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+	  </div>
+	</div>
+  
+  <div class="resume">
+    <div class="sidebar">
+      <h1>Jose Ricardo Porras Solis</h1>
+      <p data-en="Systems Engineer" data-es="Ingeniero en Sistemas">Systems Engineer</p>
 
-						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-							<div class="card-body">
-								<ul id="myList" class="list-group">
-									<li class="listCV list-group-item active">FastTrack <i class="fas fa-arrow-right"></i> System in charge of monitoring the billing of the main system and accounting summary</li>
-									<li class="listCV list-group-item">Online money collection <i class="fas fa-arrow-right"></i> System in charge of collecting money online for the company</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				  </div>
-               </div>
-               <figure class="project-imageContainer">
-                  <center>
-                     <div class="bd-example">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <img class="project-image" width="150" src="images/java.png">
-								 <img class="project-image" width="150" data-src="images/maven.png"></br>
-								 <img class="project-image" width="150" data-src="images/prime.webp">
-								 <img class="project-image" width="150" data-src="images/glass.png">
-                              </div>
-                              <div class="carousel-item">
-                                 <img class="project-image" width="150" data-src="images/tomcat.png">
-								 <img class="project-image" width="150" data-src="images/plsql.png"></br>
-								 <img class="project-image" width="300" data-src="images/t-sql.jpg">
-                              </div>                                                     
-                           </div>
-                        </div>
-                     </div>
-                  </center>
-               </figure>			
-            </article>
-			
-			<article class="project">
-               <div class="project-details">
-                  <h3 class="project-title">Programmer analyst</h3>
-                  <h6 class="project-course">Sysco consultores</h6>
-                  <p class="project-date"><small><strong>Date:</strong> August 2014 - Octuber 2015</small></p>
-                  <p class="project-description"></p>
-                  <p class="project-description">Some technologies used are the following:
-                  </p>
-                  <p class="project-description"></p>
-                  <strong>Java 1.6, spring, JSP, tomcat, oracle</strong>
-                  <br>
-                  <br>				  
-                  <p class="project-date"><small><strong>Some tasks:</strong>				 
-                     <br>
-                     - Develop requirements and functional specifications.
-                     <br>
-                     - Database diagrams.
-                     <br>
-                     - Split functional software requirements into task with time estimates.
-                     </small>
-                  </p>
-				  <br>
-				  <div id="accordion">
-					<div>
-						<a data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-							<h5 class="project-description"><strong>Projects</strong> <i class="fas fa-angle-down"></i></h5>
-						</a>
-
-						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-							<div class="card-body">
-								<ul id="myList" class="list-group">
-									<li class="listSysco list-group-item active">COFRA <i class="fas fa-arrow-right"></i> System to manage payment arrangements</li>
-									<li class="listSysco list-group-item">Billing <i class="fas fa-arrow-right"></i> Billing management system fixed telephony, fixed charges and payroll charges.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				  </div>
-               </div>
-               <figure class="project-imageContainer">
-                  <center>
-                     <div class="bd-example">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <img class="project-image" width="150" src="images/java.png">
-								 <img class="project-image" width="150" data-src="images/was.png"></br>
-								 <img class="project-image" width="300" data-src="images/maven.png">
-                              </div>
-                              <div class="carousel-item">
-								 <img class="project-image" width="150" data-src="images/jsp.png">
-								 <img class="project-image" width="150" data-src="images/springFrame.jpg"></br>
-								 <img class="project-image" width="150" data-src="images/linux.jpg">
-                              </div>                                                     
-                           </div>
-                        </div>
-                     </div>
-                  </center>
-               </figure>			
-            </article>
-         </div>
-      </section>
-      <section id="anotherSkills" class="portfolio">
-         <div class="container">
-            <h2>Another skills</h2>
-            <article class="anotherSkillsContainerArticle">
-               <div class="anotherSkillsContainer">
-                  <div class="anotherSkillsFirstSubContainer">
-                     <div class="anotherSkillsDivChildren">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Android</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">SVN</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Jenkins</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Bootstrap</p>
-                        </div>
-                     </div>
-                     <div class="anotherSkillsDivChildrenAlone">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Jaxb</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Spring</p>
-                        </div>
-                     </div>
-                     <div class="anotherSkillsDivChildren">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">JQuery</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Mapstruct</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">JavaScript</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">PL-SQL</p>
-                        </div>
-                     </div>
-                     <div class="anotherSkillsDivChildrenAlone">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">PostgreSQL</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">T-SQL</p>
-                        </div>
-                     </div>
-                     <div class="anotherSkillsDivChildren">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Scrum</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Kanban</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Windows</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Linux</p>
-                        </div>
-                     </div>
-                     <div class="anotherSkillsDivChildrenAlone">
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Self motivated</p>
-                        </div>
-                        <div class="blueOval">
-                           <p class="labelBlueOval">Team oriented</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </article>
-         </div>
-      </section>
-      <br>
-      <div id="education" class="container">
-         <h2 class="event-list-title">Education</h2>
+      <div class="section contact" id="contact">
+        <h2 data-en="Contact" data-es="Contacto">Contact</h2>
+        <span class="whatsapp-tooltip">📞 (506) 6016-6542</span>
+        <p>📧 <a href="mailto:jrporras252@gmail.com">jrporras252@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/jose-ricardo-porras-solis-b4058a149/" target="_blank">LinkedIn</a></p>
       </div>
-      <section class="event-list">
-         <div class="container">
-            <article class="event">
-               <figure class="event-imageContainer">
-                  <img class="event-image" src="images/bachiller.jpg" width="500">
-               </figure>
-               <div class="event-detail">
-                  <h3 class="event-title text-center">Universidad Tecnologica Costarricense (UTC)</h3>
-                  <p class="event-description text-center">Computerstystems engineer - 2017.</p>
-               </div>
-            </article>
-         </div>
-      </section>
-      <section id="contacto" class="contact">
-         <div class="container">
-            <form class="form-email">
-               <h3>¿Do we create something together?</h3>
-               <div class="divForm">
-                  <input type="text" placeholder="Leave me your e-mail" id="email">
-                  <button id="btnSendEmail">Send</button>
-               </div>
-            </form>
-         </div>
-      </section>
-      <footer class="footer">
-         <div class="container">
-            <div>
-               <strong>
-                  <p id="date" class="labelsFooter"> </p>
-               </strong>
-            </div>
-            <strong>
-               <div>
-                  <p class="labelsFooter">
-                     <strong> Created by: José Ricardo Porras Solís</strong>
-                  </p>
-               </div>
-            </strong>
-         </div>
-         <strong>
-			<script type="text/javascript" src="js/file.js"></script>
-         </strong>
-      </footer>
-   </body>
+
+      <div class="section" id="education">
+        <h2 data-en="Education" data-es="Educación">Education</h2>
+        <p>Universidad Tecnologica Costarricense</p>
+        <p>Systems Engineer, 2018</p>
+      </div>
+
+      <div class="section" id="certifications">
+        <h2 data-en="Certifications" data-es="Certificaciones">Certifications</h2>
+        <ul>
+          <li>Oracle Certified Associate, Java SE Programmer</li>
+          <li>Scrum Master - International Scrum Institute</li>
+        </ul>
+      </div>
+
+      <div class="section" id="technical-skills">
+        <h2 data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
+        <ul>
+          <li>Java, C#, NodeJS</li>
+          <li>Microservices, Cloud</li>
+          <li>JSF, JPA, PL/SQL, T-SQL</li>
+          <li>Angular, Architecture</li>
+        </ul>
+      </div>
+
+      <div class="section"id="soft-skills">
+        <h2 data-en="Soft Skills" data-es="Habilidades Blandas">Soft Skills</h2>
+        <ul>
+          <li>Leadership and mentoring</li>
+          <li>Teamwork</li>
+          <li>Problem-solving</li>
+          <li>Analytical thinking</li>
+          <li>Effective communication</li>
+          <li>Adaptability</li>
+          <li>Continuous learning</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="section" id="summary">
+        <h2 data-en="Professional Summary" data-es="Resumen Profesional">Professional Summary</h2>
+        <p data-en="Systems Engineer with over 7 years of experience in multiple sectors such as finance, health, and telecommunications. Specialized in backend development, microservices, and cloud technologies. Proven ability to lead teams, deliver complex solutions, and ensure high-quality software following best practices."
+           data-es="Ingeniero en Sistemas con más de 7 años de experiencia en sectores como finanzas, salud y telecomunicaciones. Especializado en desarrollo backend, microservicios y tecnologías en la nube. Capacidad comprobada para liderar equipos, entregar soluciones complejas y garantizar software de alta calidad siguiendo buenas prácticas.">
+          Systems Engineer with over 7 years of experience in multiple sectors such as finance, health, and telecommunications. Specialized in backend development, microservices, and cloud technologies. Proven ability to lead teams, deliver complex solutions, and ensure high-quality software following best practices
+        </p>
+      </div>
+
+      <div class="section" id="experience">
+        <h2 data-en="Experience" data-es="Experiencia">Experience</h2>
+
+        <div>
+          <p class="job-title">Senior Java Programmer</p>
+          <p class="job-period">Scotiabank | 2021–2025</p>
+          <ul>
+            <li data-en="Technical leader" data-es="Líder técnico">Technical leader</li>
+			<li data-en="Tokenization, ACH transfers, MPH payment for Panama services, migrations"
+				data-es="Tokenización, transferencias ACH, pagos MPH para servicios en Panamá, migraciones">
+			  Tokenization, ACH transfers, MPH payment for Panama services, migrations
+			</li>
+			<li data-en="Technologies: Azure, C#, Java 17 and 8, microservices, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server"
+				data-es="Tecnologías: Azure, C#, Java 17 y 8, microservicios, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server">
+			  Technologies: Azure, C#, Java 17 and 8, microservices, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server
+			</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="job-title">Senior Consultant</p>
+          <p class="job-period">Novacomp | 2018–2021</p>
+          <ul>
+            <li data-en="Customer management system, work order control, project calculations and costs, card transactions and payments, electronic invoice, migrate JSF to Angular"
+				data-es="Sistema de gestión de clientes, control de órdenes de trabajo, cálculos y costos de proyectos, transacciones y pagos con tarjeta, factura electrónica, migración de JSF a Angular">
+			  Customer management system, work order control, project calculations and costs, card transactions and payments, electronic invoice, migrate JSF to Angular
+			</li>
+
+			<li data-en="Technologies: Azure, Java 8, 17 and 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx"
+				data-es="Tecnologías: Azure, Java 8, 17 y 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx">
+			  Technologies: Azure, Java 8, 17 and 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx
+			</li>
+
+          </ul>
+        </div>
+
+        <div>
+          <p class="job-title">Mid Java Programmer</p>
+          <p class="job-period">Cablevision de Costa Rica | 2015–2018</p>
+          <ul>
+            <li data-en="Fastrack, real-time pay" data-es="Fastrack, pagos en tiempo real">
+			  Fastrack, real-time pay
+			</li>
+			<li data-en="Technologies: Java 7 and 8, JSF, SQL Server, Oracle"
+				data-es="Tecnologías: Java 7 y 8, JSF, SQL Server, Oracle">
+			  Technologies: Java 7 and 8, JSF, SQL Server, Oracle
+			</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
