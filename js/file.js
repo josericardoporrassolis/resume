@@ -1,104 +1,53 @@
-var file = (function($) {
-  var init = function() {
-    const date = document.querySelector("#date");
-    const newDate = new Date();
-    date.innerHTML = `${newDate.getDate()}/${newDate.getMonth() +
-      1}/${newDate.getFullYear()} `;
-  };
-
-  var eventHandlers = function() {
-    const ipad = window.matchMedia("screen and (max-width: 767px)");
-    ipad.addListener(validation);
-
-    const menu = document.querySelector("#menu");
-    const burgerButton = document.querySelector("#burger-menu");
-
-    const btnSendEmail = document.querySelector("#btnSendEmail");
-    const email = document.querySelector("#email");
-
-    menu.addEventListener("click", hideShow);
-
-    btnSendEmail.addEventListener("click", prepareEmail);
-
-    function validation(event) {
-      if (event.matches) {
-        burgerButton.addEventListener("click", hideShow);
-      } else {
-        burgerButton.removeEventListener("click", hideShow);
+let currentLang = 'en';
+    function toggleLanguage() {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        const en = el.getAttribute('data-en');
+        const es = el.getAttribute('data-es');
+        if (en && es) {
+          el.innerHTML = currentLang === 'en' ? es : en;
+        }
+      });
+      const langButton = document.querySelector('.toggle-lang');
+      if (langButton) {
+        langButton.innerText = currentLang === 'en' ? '🌐 English' : '🌐 Español';
       }
+      currentLang = currentLang === 'en' ? 'es' : 'en';
     }
+	
+	function toggleMenu() {
+  const nav = document.getElementById('navbarLinks');
+  nav.classList.toggle('active');
+}
 
-    $("body").on("click", function() {
-      if (menu.classList.contains("is-active")) {
-        setTimeout(() => {
-          menu.classList.remove("is-active");
-        }, 2);
-      }
-    });
-
-    validation(ipad);
-
-    function hideShow() {
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.classList.add('section-highlight');
       setTimeout(() => {
-        if (menu.classList.contains("is-active")) {
-          menu.classList.remove("is-active");
-        } else {
-          menu.classList.add("is-active");
-        }
-      }, 1);
+        targetSection.classList.remove('section-highlight');
+      }, 10000); // 10 seconds
     }
-
-    function prepareEmail() {
-      event.preventDefault();
-      if (email.value != undefined && email.value != "") {
-        window.open(
-          "mailto:jrporras252@gmail.com?subject=Contacto&body=" + email.value
-        );
-      }
-    }
-  };
-
-  return {
-    init: init,
-    eventHandlers: eventHandlers
-  };
-    
-})(jQuery);
-
-(function($) {
-    $.fn.cycle = function(timeout, cls) {
-        var l = this.length,
-            current = 0,
-            prev = -1,
-            elements = this;
-
-        function next() {
-            elements.eq(prev).removeClass(cls);
-            // or just `elements.removeClass(cls);`
-            elements.eq(current).addClass(cls);
-            prev = current;
-            current = (current + 1) % l; // modulo for wrap around
-            setTimeout(next, timeout);
-        }
-        setTimeout(next, timeout);
-        return this;
-    };
-}(jQuery));
-
-$('li.listNova').cycle(2000, 'active');
-$('li.listScotia').cycle(2000, 'active');
-$('li.listCV').cycle(2000, 'active');
-$('li.listSysco').cycle(2000, 'active');
-
-$(document).ready(function() {
-  file.init();
-  file.eventHandlers();
+  });
 });
 
-var imgEl = document.getElementsByTagName('img');
-for (var i=0; i<imgEl.length; i++) {
-    if(imgEl[i].getAttribute('data-src')) {
-       imgEl[i].setAttribute('src',imgEl[i].getAttribute('data-src'));
-       imgEl[i].removeAttribute('data-src');
+function printByLanguage() {
+    if (currentLang === 'es') { 
+        printDocumentEs();
+    } 
+    else if (currentLang === 'en') {
+        printDocumentEn();
+    } else {
+        console.error('Idioma de impresión no reconocido.');
     }
+}
+
+function printDocumentEs() {
+    window.open('file/cv.pdf', '_blank')
+}
+
+function printDocumentEn() {
+    window.open('file/resume.pdf', '_blank');
 }
