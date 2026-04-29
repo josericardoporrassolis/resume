@@ -205,8 +205,7 @@ a {
 
 /* === Section Highlight === */
 .section-highlight {
-  animation: highlightFade 10s ease-out forwards;
-  box-shadow: 0 0 0 4px #3498db;
+  animation: highlightFade 7s ease-out forwards; 
   border-radius: 8px;
 }
 
@@ -334,4 +333,18 @@ a {
 /* Modo oscuro: ajusta el borde si lo deseas */
 .dark-mode .whatsapp-tooltip::after {
   box-shadow: 0 2px 6px rgba(255,255,255,0.2);
+}
+
+ul li a {
+  /* Blanco humo, muy profesional */
+  color: #f5f5f5; 
+  font-weight: bold; /* La negrita ayuda a distinguir que es un link */
+  text-decoration: underline; /* El subrayado indica "clic aquí" */
+  text-decoration-thickness: 1px; /* Subrayado fino */
+  text-underline-offset: 3px; /* Separación del texto */
+  transition: opacity 0.3s;
+}
+
+ul li a:hover {
+  opacity: 0.8;
 }

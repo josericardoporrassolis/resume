@@ -4,181 +4,220 @@
       <title>José Ricardo Porras Solís</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://avatars.githubusercontent.com/u/104660392?s=400&u=5c659e2cfaecead1c4b9bbc43453f1e5ad70ee59&v=4" rel="shortcut icon" type="image/x-icon">
-	  <link rel="stylesheet" href="css/styles.min.css">
-	  <script src="js/file.js"></script>
-	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K97NENV4J"></script>
-	  <script>
-		 window.dataLayer = window.dataLayer || [];
-		 function gtag(){dataLayer.push(arguments);}
-		 gtag('js', new Date());
-		 gtag('config', 'G-0K97NENV4J');
-	  </script>
+      <link rel="stylesheet" href="css/styles.min.css">
+      <script src="js/file.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K97NENV4J"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-0K97NENV4J');
+      </script>
    </head>
-   <body>
+   <body class="dark-mode">
 
-	<div class="desktop-buttons">
-	  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')"><span data-en="🌓 Dark" data-es="🌓 Oscuro">🌓 Dark</span></button>
-	  <button class="toggle-lang" onclick="toggleLanguage()">🌐 Español</button>
-	  <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Print</span></button>
-	</div>
+    <div class="desktop-buttons">
+      <button class="toggle-dark" onclick="toggleTheme()">
+  <span id="theme-text" data-en="☀️ Light" data-es="☀️ Claro">☀️ Claro</span>
+</button>
+      <button class="toggle-lang" onclick="toggleLanguage()">🌐 English</button>
+      <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Imprimir</span></button>
+    </div>
 
-	<nav class="navbar">
-	  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
-	  <div class="navbar-links" id="navbarLinks">
-		<a href="#summary"><span data-en="Summary" data-es="Resumen">Summary</span></a>
-		<a href="#experience"><span data-en="Experience" data-es="Experiencia">Experience</span></a>
-		<a href="#education"><span data-en="Education" data-es="Educacion">Education</span></a>
-		<a href="#certifications"><span data-en="Certifications" data-es="Certificaciones">Certifications</span></a>
-		<a href="#technical-skills"><span data-en="Technical Skills" data-es="Habilidades tecnicas">Technical Skills</span></a>
-		<a href="#soft-skills"><span data-en="Soft Skills" data-es="Habilidades blandas">Soft Skills</span></a>
-		<a href="#contact"><span data-en="Contact" data-es="Contacto">Contact</span></a>
-		<div class="mobile-buttons">
-		  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')"><span data-en="🌓 Dark" data-es="🌓 Oscuro">🌓 Dark</span></button>
-		  <button class="toggle-lang" onclick="toggleLanguage()">🌐 Español</button>
-		  <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Print</span></button>
-		</div>
-	  </div>
-	</nav>
-	
-	<!-- Logo Carousel -->
-	<div class="carousel-container">
-	  <div class="carousel-track">
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="Bitbucket" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="SonarQube" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
-	  </div>
-	</div>
+    <nav class="navbar">
+      <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+      <div class="navbar-links" id="navbarLinks">
+        <a href="#summary"><span data-en="Summary" data-es="Resumen">Resumen</span></a>
+        <a href="#experience"><span data-en="Experience" data-es="Experiencia">Experiencia</span></a>
+        <a href="#education"><span data-en="Education" data-es="Educacion">Educación</span></a>
+        <a href="#certifications"><span data-en="Certifications" data-es="Certificaciones">Certificaciones</span></a>
+        <a href="#technical-skills"><span data-en="Technical Skills" data-es="Habilidades tecnicas">Habilidades técnicas</span></a>
+        <a href="#soft-skills"><span data-en="Soft Skills" data-es="Habilidades blandas">Habilidades blandas</span></a>
+        <a href="#languages"><span data-en="Languages" data-es="Idiomas">Idiomas</span></a>
+        <a href="#contact"><span data-en="Contact" data-es="Contacto">Contacto</span></a>
+        <div class="mobile-buttons">
+          <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')"><span data-en="🌓 Dark" data-es="🌓 Oscuro">🌓 Oscuro</span></button>
+          <button class="toggle-lang" onclick="toggleLanguage()">🌐 English</button>
+          <button class="print-button" onclick="printByLanguage()"><span data-en="🖨️ Print" data-es="🖨️ Imprimir">🖨️ Imprimir</span></button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="Bitbucket" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="SonarQube" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+      </div>
+    </div>
   
   <div class="resume">
     <div class="sidebar">
-      <h1>Jose Ricardo Porras Solis</h1>
-      <p data-en="Systems Engineer" data-es="Ingeniero en Sistemas">Systems Engineer</p>
+      <h1>José Ricardo Porras Solís</h1>
+      <p data-en="Software Architect | Backend Tech Lead" data-es="Arquitecto de Software | Líder Técnico Backend">Arquitecto de Software | Líder Técnico Backend</p>
 
       <div class="section contact" id="contact">
-        <h2 data-en="Contact" data-es="Contacto">Contact</h2>
+        <h2 data-en="Contact" data-es="Contacto">Contacto</h2>
         <span class="whatsapp-tooltip">📞 (506) 6016-6542</span>
         <p>📧 <a href="mailto:jrporras252@gmail.com">jrporras252@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/jose-ricardo-porras-solis-b4058a149/" target="_blank">LinkedIn</a></p>
+        <p>🌐 <a href="https://josericardoporrassolis.github.io/resume/" target="_blank">Portfolio / GitHub</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/jose-ricardo-porras-solis" target="_blank">LinkedIn</a></p>
       </div>
 
       <div class="section" id="education">
-        <h2 data-en="Education" data-es="Educación">Education</h2>
-        <p>Universidad Tecnologica Costarricense</p>
-        <p>Systems Engineer, 2018</p>
+        <h2 data-en="Education" data-es="Educación">Educación</h2>
+        <p>Universidad Tecnológica Costarricense</p>
+        <p data-en="Systems Engineer, 2018" data-es="Ingeniería de Sistemas, 2018">Ingeniería de Sistemas, 2018</p>
       </div>
 
       <div class="section" id="certifications">
-        <h2 data-en="Certifications" data-es="Certificaciones">Certifications</h2>
+        <h2 data-en="Certifications" data-es="Certificaciones">Certificaciones</h2>
         <ul>
-          <li>Oracle Certified Associate, Java SE Programmer</li>
-          <li>Scrum Master - International Scrum Institute</li>
+          <li>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E09F5D03643FD490CEF72ED4F3764E34F0E682F60DF7282B3ED78B62CD9AFB14" target="_blank" rel="noopener noreferrer">
+              Oracle Certified Associate, Java SE Programmer
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scrum-institute.org/certifications/Scrum-Institute.Org-SMAC75392cc305-42046984321437.pdf" target="_blank" rel="noopener noreferrer">
+              Scrum Master - International Scrum Institute
+            </a>
+          </li>
+        </ul>
+        <h3 data-en="In Progress" data-es="En Progreso" style="font-size: 1rem; margin-top: 10px;">En Progreso</h3>
+        <ul>
+          <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
+          <li>Microsoft Certified: Azure Developer Associate (AZ-204)</li>
         </ul>
       </div>
 
       <div class="section" id="technical-skills">
-        <h2 data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
+        <h2 data-en="Technical Skills" data-es="Habilidades Técnicas">Habilidades Técnicas</h2>
         <ul>
-          <li>Java, C#, NodeJS</li>
-          <li>Microservices, Cloud</li>
-          <li>JSF, JPA, PL/SQL, T-SQL</li>
-          <li>Angular, Architecture</li>
+          <li data-en="Architecture: Microservices, Event-Oriented, REST APIs, DevSecOps, Scalability" data-es="Arquitectura: Microservicios, Orientada a Eventos, APIs REST, DevSecOps, Escalabilidad">Arquitectura: Microservicios, Orientada a Eventos, APIs REST, DevSecOps, Escalabilidad</li>
+          <li data-en="Backend: Java (7, 8, 17, 21), C#, NodeJS, Spring Boot, JSF, JPA" data-es="Backend: Ecosistema Java (7, 8, 17, 21), C#, NodeJS, Spring Boot, JSF, JPA">Backend: Ecosistema Java (7, 8, 17, 21), C#, NodeJS, Spring Boot, JSF, JPA</li>
+          <li data-en="Cloud & Infra: Microsoft Azure, Apache Kafka, Tomcat, WebLogic, IBM WAS" data-es="Cloud & Infra: Microsoft Azure, Apache Kafka, Tomcat, WebLogic, IBM WAS">Cloud & Infra: Microsoft Azure, Apache Kafka, Tomcat, WebLogic, IBM WAS</li>
+          <li data-en="Databases: Oracle, SQL Server, Stored Procedures (PL/SQL, T-SQL)" data-es="Bases de Datos: Oracle, SQL Server, Procedimientos Almacenados (PL/SQL, T-SQL)">Bases de Datos: Oracle, SQL Server, Procedimientos Almacenados (PL/SQL, T-SQL)</li>
+          <li data-en="CI/CD & QA: SonarQube, Fortify, WebInspect, Checkmarx, GitHub Copilot. Frontend: Angular" data-es="CI/CD y QA: SonarQube, Fortify, WebInspect, Checkmarx, GitHub Copilot. Frontend: Angular">CI/CD y QA: SonarQube, Fortify, WebInspect, Checkmarx, GitHub Copilot. Frontend: Angular</li>
         </ul>
       </div>
 
-      <div class="section"id="soft-skills">
-        <h2 data-en="Soft Skills" data-es="Habilidades Blandas">Soft Skills</h2>
+      <div class="section" id="soft-skills">
+        <h2 data-en="Soft Skills" data-es="Habilidades Blandas">Habilidades Blandas</h2>
         <ul>
-          <li>Leadership and mentoring</li>
-          <li>Teamwork</li>
-          <li>Problem-solving</li>
-          <li>Analytical thinking</li>
-          <li>Effective communication</li>
-          <li>Adaptability</li>
-          <li>Continuous learning</li>
+          <li data-en="Leadership and mentoring" data-es="Liderazgo y mentoría">Liderazgo y mentoría</li>
+          <li data-en="Teamwork" data-es="Trabajo en equipo">Trabajo en equipo</li>
+          <li data-en="Problem-solving" data-es="Resolución de problemas">Resolución de problemas</li>
+          <li data-en="Analytical thinking" data-es="Pensamiento analítico">Pensamiento analítico</li>
+          <li data-en="Effective communication" data-es="Comunicación efectiva">Comunicación efectiva</li>
+          <li data-en="Adaptability" data-es="Adaptabilidad">Adaptabilidad</li>
+          <li data-en="Continuous learning" data-es="Aprendizaje continuo">Aprendizaje continuo</li>
+        </ul>
+      </div>
+
+      <div class="section" id="languages">
+        <h2 data-en="Languages" data-es="Idiomas">Idiomas</h2>
+        <ul>
+          <li data-en="Spanish (Native)" data-es="Español (Nativo)">Español (Nativo)</li>
+          <li data-en="English (B1 Intermediate)" data-es="Inglés (B1)">Inglés (B1 Intermedio)</li>
         </ul>
       </div>
     </div>
 
     <div class="main">
       <div class="section" id="summary">
-        <h2 data-en="Professional Summary" data-es="Resumen Profesional">Professional Summary</h2>
-        <p data-en="Systems Engineer with over 7 years of experience in multiple sectors such as finance, health, and telecommunications. Specialized in backend development, microservices, and cloud technologies. Proven ability to lead teams, deliver complex solutions, and ensure high-quality software following best practices."
-           data-es="Ingeniero en Sistemas con más de 7 años de experiencia en sectores como finanzas, salud y telecomunicaciones. Especializado en desarrollo backend, microservicios y tecnologías en la nube. Capacidad comprobada para liderar equipos, entregar soluciones complejas y garantizar software de alta calidad siguiendo buenas prácticas.">
-          Systems Engineer with over 7 years of experience in multiple sectors such as finance, health, and telecommunications. Specialized in backend development, microservices, and cloud technologies. Proven ability to lead teams, deliver complex solutions, and ensure high-quality software following best practices
+        <h2 data-en="Professional Summary" data-es="Resumen Profesional">Resumen Profesional</h2>
+        <p data-en="Systems Engineer with over 10 years of experience in the design and definition of scalable technical architectures in highly regulated and critical sectors (finance, health, telecommunications). Specialized in tracing integration strategies using APIs and microservices (event-driven), aligning non-functional requirements with business objectives. Proven experience designing solutions on cloud platforms (Azure), integrating DevSecOps practices to ensure efficient deployments, information security, and high availability in core transactional systems."
+           data-es="Ingeniero de Sistemas con más de 10 años de experiencia en el diseño y definición de arquitecturas técnicas escalables en sectores altamente regulados y críticos (finanzas, salud, telecomunicaciones). Especializado en trazar estrategias de integración mediante APIs y microservicios (event-driven), alineando los requerimientos no funcionales con los objetivos de negocio. Experiencia comprobada diseñando soluciones en plataformas cloud (Azure), integrando prácticas DevSecOps para garantizar despliegues eficientes, seguridad de la información y alta disponibilidad en sistemas transaccionales core.">
+          Ingeniero de Sistemas con más de 10 años de experiencia en el diseño y definición de arquitecturas técnicas escalables en sectores altamente regulados y críticos (finanzas, salud, telecomunicaciones). Especializado en trazar estrategias de integración mediante APIs y microservicios (event-driven), alineando los requerimientos no funcionales con los objetivos de negocio. Experiencia comprobada diseñando soluciones en plataformas cloud (Azure), integrando prácticas DevSecOps para garantizar despliegues eficientes, seguridad de la información y alta disponibilidad en sistemas transaccionales core.
         </p>
       </div>
 
       <div class="section" id="experience">
-        <h2 data-en="Experience" data-es="Experiencia">Experience</h2>
+        <h2 data-en="Experience" data-es="Experiencia Profesional">Experiencia Profesional</h2>
 
         <div>
-          <p class="job-title">Senior Java Programmer</p>
-          <p class="job-period">Scotiabank | 2021–2025</p>
+          <p class="job-title" data-en="Technical Leader (Backend)" data-es="Líder Técnico (Backend)">Líder Técnico (Backend)</p>
+          <p class="job-period">DaviBank/Scotiabank, Costa Rica | 2021–Actual</p>
           <ul>
-            <li data-en="Technical leader" data-es="Líder técnico">Technical leader</li>
-			<li data-en="Tokenization, ACH transfers, MPH payment for Panama services, migrations"
-				data-es="Tokenización, transferencias ACH, pagos MPH para servicios en Panamá, migraciones">
-			  Tokenization, ACH transfers, MPH payment for Panama services, migrations
-			</li>
-			<li data-en="Technologies: Azure, C#, Java 17 and 8, microservices, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server"
-				data-es="Tecnologías: Azure, C#, Java 17 y 8, microservicios, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server">
-			  Technologies: Azure, C#, Java 17 and 8, microservices, GitHub Copilot, Tomcat, SpringBoot, Kafka, Oracle, SonarQube, Fortify, WebInspect, Checkmarx, SQL Server
-			</li>
+            <li data-en="Critical Architecture Design: Led the technical definition and architectural design for core transactional systems (Tokenization, ACH Transfers, MPH Payments), ensuring high resilience and scalability for thousands of daily operations without downtime." 
+                data-es="Diseño de Arquitecturas Críticas: Lideré la definición técnica y el diseño de la arquitectura para sistemas transaccionales core (Tokenización, Transferencias ACH, Pagos MPH), asegurando alta resiliencia y escalabilidad para miles de operaciones diarias sin caídas.">
+              Diseño de Arquitecturas Críticas: Lideré la definición técnica y el diseño de la arquitectura para sistemas transaccionales core (Tokenización, Transferencias ACH, Pagos MPH), asegurando alta resiliencia y escalabilidad para miles de operaciones diarias sin caídas.
+            </li>
+            <li data-en="Integration Strategies: Defined and implemented secure integration patterns ensuring interoperability between legacy banking systems and external services using microservices (Java, Spring Boot) and event-driven architectures (Kafka)." 
+                data-es="Estrategias de Integración: Definí e implementé patrones de integración seguros garantizando interoperabilidad entre sistemas legacy bancarios y servicios externos usando microservicios (Java, Spring Boot) y arquitecturas orientadas a eventos (Kafka).">
+              Estrategias de Integración: Definí e implementé patrones de integración seguros garantizando interoperabilidad entre sistemas legacy bancarios y servicios externos usando microservicios (Java, Spring Boot) y arquitecturas orientadas a eventos (Kafka).
+            </li>
+            <li data-en="Cloud Solutions: Designed and led migrations to cloud platforms (Azure), considering resource optimization, high availability, and compliance with strict financial regulations." 
+                data-es="Soluciones Cloud: Diseñé y lideré migraciones hacia plataformas cloud (Azure), considerando la optimización de recursos, alta disponibilidad y cumplimiento de estrictas normativas financieras.">
+              Soluciones Cloud: Diseñé y lideré migraciones hacia plataformas cloud (Azure), considerando la optimización de recursos, alta disponibilidad y cumplimiento de estrictas normativas financieras.
+            </li>
+            <li data-en="DevSecOps: Designed solutions compatible with CI/CD flows, integrating security analysis tools (SonarQube, Fortify, Checkmarx) from the design phase." 
+                data-es="DevSecOps: Diseñé soluciones compatibles con flujos CI/CD, integrando herramientas de análisis de seguridad (SonarQube, Fortify, Checkmarx) desde la fase de diseño.">
+              DevSecOps: Diseñé soluciones compatibles con flujos CI/CD, integrando herramientas de análisis de seguridad (SonarQube, Fortify, Checkmarx) desde la fase de diseño.
+            </li>
+            <li data-en="Team Leadership & Mentoring: Guided a team of developers, aligning technical execution with business objectives and fostering a culture of technical excellence and best practices." 
+                data-es="Liderazgo y Mentoría de Equipo: Guié a un equipo de desarrolladores, alineando la ejecución técnica con los objetivos de negocio y fomentando una cultura de excelencia técnica y buenas prácticas.">
+              Liderazgo y Mentoría de Equipo: Guié a un equipo de desarrolladores, alineando la ejecución técnica con los objetivos de negocio y fomentando una cultura de excelencia técnica y buenas prácticas.
+            </li>
           </ul>
         </div>
 
         <div>
-          <p class="job-title">Senior Consultant</p>
-          <p class="job-period">Novacomp | 2018–2021</p>
+          <p class="job-title" data-en="Senior Integration and Backend Consultant" data-es="Consultor Senior de Integración y Backend">Consultor Senior de Integración y Backend</p>
+          <p class="job-period">Novacomp, Costa Rica | 2018–2021</p>
           <ul>
-            <li data-en="Customer management system, work order control, project calculations and costs, card transactions and payments, electronic invoice, migrate JSF to Angular"
-				data-es="Sistema de gestión de clientes, control de órdenes de trabajo, cálculos y costos de proyectos, transacciones y pagos con tarjeta, factura electrónica, migración de JSF a Angular">
-			  Customer management system, work order control, project calculations and costs, card transactions and payments, electronic invoice, migrate JSF to Angular
-			</li>
-
-			<li data-en="Technologies: Azure, Java 8, 17 and 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx"
-				data-es="Tecnologías: Azure, Java 8, 17 y 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx">
-			  Technologies: Azure, Java 8, 17 and 21, Weblogic, Tomcat, SpringBoot, JSF, Kafka, WAS 7–9, Oracle, SQL Server, Angular 7, SonarQube, Fortify, WebInspect, Checkmarx
-			</li>
-
+            <li data-en="Modernization: Led the architectural transition and migration of monolithic applications (JSF) to modern decoupled architectures (Angular / Microservices), significantly improving system maintainability." 
+                data-es="Modernización: Lideré la transición arquitectónica y migración de aplicaciones monolíticas (JSF) hacia arquitecturas desacopladas modernas (Angular / Microservicios), mejorando significativamente la mantenibilidad de los sistemas.">
+              Modernización: Lideré la transición arquitectónica y migración de aplicaciones monolíticas (JSF) hacia arquitecturas desacopladas modernas (Angular / Microservicios), mejorando significativamente la mantenibilidad de los sistemas.
+            </li>
+            <li data-en="API Design: Designed and implemented integration solutions for critical systems, including card payments, electronic invoicing, and customer management (CRM)." 
+                data-es="Diseño de APIs: Diseñé e implementé soluciones de integración para sistemas críticos, incluyendo pagos con tarjeta, factura electrónica y gestión de clientes (CRM).">
+              Diseño de APIs: Diseñé e implementé soluciones de integración para sistemas críticos, incluyendo pagos con tarjeta, factura electrónica y gestión de clientes (CRM).
+            </li>
+            <li data-en="Deployment and Optimization: Configuration, deployment, and optimization on enterprise application servers (WebLogic, Tomcat, WAS 7-9) with Oracle and SQL Server." 
+                data-es="Despliegue y Optimización: Configuración, despliegue y optimización en servidores de aplicaciones empresariales (WebLogic, Tomcat, WAS 7-9) con Oracle y SQL Server.">
+              Despliegue y Optimización: Configuración, despliegue y optimización en servidores de aplicaciones empresariales (WebLogic, Tomcat, WAS 7-9) con Oracle y SQL Server.
+            </li>
           </ul>
         </div>
 
         <div>
-          <p class="job-title">Mid Java Programmer</p>
-          <p class="job-period">Cablevision de Costa Rica | 2015–2018</p>
+          <p class="job-title" data-en="Backend Developer (Java)" data-es="Desarrollador Backend (Java)">Desarrollador Backend (Java)</p>
+          <p class="job-period">Cable Visión de Costa Rica, Costa Rica | 2015–2018</p>
           <ul>
-            <li data-en="Fastrack, real-time pay" data-es="Fastrack, pagos en tiempo real">
-			  Fastrack, real-time pay
-			</li>
-			<li data-en="Technologies: Java 7 and 8, JSF, SQL Server, Oracle"
-				data-es="Tecnologías: Java 7 y 8, JSF, SQL Server, Oracle">
-			  Technologies: Java 7 and 8, JSF, SQL Server, Oracle
-			</li>
+            <li data-en="Payment Systems: Participated in the development and deployment of the 'Fastrack' platform for real-time payment processing." 
+                data-es="Sistemas de Pago: Participé en el desarrollo y despliegue de la plataforma 'Fastrack' para el procesamiento de pagos en tiempo real.">
+              Sistemas de Pago: Participé en el desarrollo y despliegue de la plataforma "Fastrack" para el procesamiento de pagos en tiempo real.
+            </li>
+            <li data-en="DB Optimization: Collaborated in the design of data models and creation of optimized queries in Oracle and SQL Server, significantly reducing response times in high-concurrency transactions." 
+                data-es="Optimización BD: Colaboré en el diseño de modelos de datos y creación de consultas optimizadas en Oracle y SQL Server, reduciendo significativamente los tiempos de respuesta en transacciones de alta concurrencia.">
+              Optimización BD: Colaboré en el diseño de modelos de datos y creación de consultas optimizadas en Oracle y SQL Server, reduciendo significativamente los tiempos de respuesta en transacciones de alta concurrencia.
+            </li>
           </ul>
         </div>
       </div>

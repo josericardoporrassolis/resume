@@ -1,36 +1,58 @@
-let currentLang = 'en';
-    function toggleLanguage() {
-      const elements = document.querySelectorAll('[data-en]');
-      elements.forEach(el => {
+let currentLang = 'es'; 
+
+function toggleLanguage() {
+    const elements = document.querySelectorAll('[data-en]');
+    
+    const newLang = currentLang === 'en' ? 'es' : 'en';
+
+    elements.forEach(el => {
         const en = el.getAttribute('data-en');
         const es = el.getAttribute('data-es');
+        
         if (en && es) {
-          el.innerHTML = currentLang === 'en' ? es : en;
+            el.innerHTML = newLang === 'en' ? en : es;
         }
-      });
-      const langButton = document.querySelector('.toggle-lang');
-      if (langButton) {
-        langButton.innerText = currentLang === 'en' ? '🌐 English' : '🌐 Español';
-      }
-      currentLang = currentLang === 'en' ? 'es' : 'en';
+    });
+
+    const langButton = document.querySelector('.toggle-lang');
+    if (langButton) {
+        langButton.innerText = newLang === 'en' ? '🌐 English' : '🌐 Español';
     }
-	
-	function toggleMenu() {
-  const nav = document.getElementById('navbarLinks');
-  nav.classList.toggle('active');
+
+    currentLang = newLang;
 }
 
-document.querySelectorAll('.navbar a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.classList.add('section-highlight');
-      setTimeout(() => {
-        targetSection.classList.remove('section-highlight');
-      }, 10000); // 10 seconds
-    }
-  });
+function toggleMenu() {
+    const nav = document.getElementById('navbarLinks');
+    nav.classList.toggle('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.classList.remove('section-highlight');
+
+                void targetSection.offsetWidth; 
+
+                targetSection.classList.add('section-highlight');
+
+                setTimeout(() => {
+                    targetSection.classList.remove('section-highlight');
+                }, 7000);
+            }
+            
+            const navLinksContainer = document.getElementById('navbarLinks');
+            if (navLinksContainer.classList.contains('active')) {
+                navLinksContainer.classList.remove('active');
+            }
+        });
+    });
 });
 
 function printByLanguage() {
@@ -45,9 +67,26 @@ function printByLanguage() {
 }
 
 function printDocumentEs() {
-    window.open('file/cv.pdf', '_blank')
+    window.open('file/CV Jose Porras.pdf', '_blank')
 }
 
 function printDocumentEn() {
-    window.open('file/resume.pdf', '_blank');
+    window.open('file/Resume Jose Porras.pdf', '_blank');
+}
+
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+  
+  const isDark = document.body.classList.contains('dark-mode');
+  const themeSpan = document.getElementById('theme-text');
+
+  if (isDark) {
+    themeSpan.setAttribute('data-en', '☀️ Light');
+    themeSpan.setAttribute('data-es', '☀️ Claro');
+    themeSpan.innerText = currentLang === 'en' ? '☀️ Light' : '☀️ Claro';
+  } else {
+    themeSpan.setAttribute('data-en', '🌓 Dark');
+    themeSpan.setAttribute('data-es', '🌓 Oscuro');
+    themeSpan.innerText = currentLang === 'en' ? '🌓 Dark' : '🌓 Oscuro';
+  }
 }
